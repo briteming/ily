@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run a one-line script
-      run: npx github:yaoqs/Issues-LordYao/GenerateBlog --user yaoqs --repo Issues-LordYao
+      run: npx GenerateBlog --user yaoqs --repo Issues-LordYao
     - name: git commit
       run: |
         git config user.name github-actions
