@@ -8,23 +8,22 @@ jobs:
     permissions:                # Job-level permissions configuration starts here
       contents: write           # 'write' access to repository contents
       pull-requests: write      # 'write' access to pull requests
-    strategy:
-      matrix:
-        node_version: [20]
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
     - name: Setup node
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
-    - uses: actions/cache@v4
+        node-version: ^20.11.0
     - name: npm
       run: |
         npm ci
         npm update
-        npm ci npm-check-updates -g --save
+        npm i npm-check-updates -g --save
         ncu
         ncu -u
+        npm ci
         npm test
     - name: git
       run: |
