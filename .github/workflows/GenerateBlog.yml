@@ -24,8 +24,6 @@ jobs:
         ncu
         ncu -u
         npm ci
-        pwd
-        ls
         npm test
     - name: git
       run: |

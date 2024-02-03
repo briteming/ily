@@ -132,7 +132,7 @@ var main = async (user, repo, labels) => {
 //
     for (i in issues) {
         var issue = issues[i];
-        console.log(issue)
+        //console.log(issue)
         var article = await issueToArticle(issue);
         await writeArticleToFile(article);
         var repository_url= `https://github.com/repos/${user}/${repo}/`;
