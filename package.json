@@ -4,7 +4,7 @@
   "description": "",
   "main": "generateblog.js",
   "scripts": {
-    "test": "node generateblog.js -u yaoqs -r Issues-LordYao -l blog"
+    "test": "node generateblog -u yaoqs -r Issues-LordYao -l blog"
   },
   "author": "yaoqs",
   "license": "MIT",

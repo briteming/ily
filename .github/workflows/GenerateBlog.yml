@@ -17,6 +17,7 @@ jobs:
       with:
         node-version: ^20.11.0
     - name: npm
+      continue-on-error: true
       run: |
         npm ci
         npm update
@@ -24,7 +25,8 @@ jobs:
         ncu
         ncu -u
         npm ci
-        npm test
+        # npm test
+        node generateblog -u yaoqs -r Issues-LordYao -l blog
     - name: git
       run: |
         git config user.name github-actions
