@@ -1,6 +1,6 @@
 name: GenerateBlog
 
-on: [issues,push]
+on: [issues]
 
 jobs:
   build:
