@@ -26,12 +26,12 @@ jobs:
         ncu -u
         npm ci
         # npm test
-        node generateblog -u yaoqs -r Issues-LordYao -l blog
+        node ./generateblog.js -u yaoqs -r Issues-LordYao -l blog
     - name: git
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git checkout master
+        git checkout main
         git pull --ff
         git add _posts/*
         git commit -m "feat: github action generate blog"
