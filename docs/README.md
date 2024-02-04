@@ -2,7 +2,7 @@
 
 ## ToC
 
-- [创刊-20240131](https://github.com/repos/yaoqs/Issues-LordYao/_posts/创刊-20240131.md)  [查看原文](https://github.com/yaoqs/Issues-LordYao/issues/1)
+- [创刊-20240131](https://yaoqs.github.io/Issues-LordYao/创刊-20240131)  [查看原文](https://github.com/yaoqs/Issues-LordYao/issues/1)
 
 ## References
 

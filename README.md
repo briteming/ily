@@ -1,8 +1,10 @@
 # Issues-LordYao
 
-## ToC
+[![GenerateBlog](https://github.com/yaoqs/Issues-LordYao/actions/workflows/GenerateBlog.yml/badge.svg)](https://github.com/yaoqs/Issues-LordYao/actions/workflows/GenerateBlog.yml)
 
-- [创刊-20240131](https://github.com/repos/yaoqs/Issues-LordYao/_posts/创刊-20240131.md)  [查看原文](https://github.com/yaoqs/Issues-LordYao/issues/1)
+[![pages-build-deployment](https://github.com/yaoqs/Issues-LordYao/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/yaoqs/Issues-LordYao/actions/workflows/pages/pages-build-deployment)
+
+## ToC
 
 ## References
 

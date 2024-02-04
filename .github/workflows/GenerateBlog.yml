@@ -26,7 +26,7 @@ jobs:
         ncu -u
         npm ci
         # npm test
-        node ./generateblog.js -u yaoqs -r Issues-LordYao -l blog
+        node generateblog -u yaoqs -r Issues-LordYao -l blog
     - name: git
       run: |
         git config user.name github-actions
