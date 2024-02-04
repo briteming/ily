@@ -91,7 +91,7 @@ return { fileName, content };
 
 async function writeArticleToFile(article) {
 return new Promise((resolve, reject) => {
-    var projectPath="_posts";
+    var projectPath="docs";
     // 使用fs.existsSync()方法检查文件夹是否存在
     if (!fs.existsSync(projectPath)) {
         console.log(`Folder '${projectPath}' does not exist. Creating...`);
@@ -150,7 +150,7 @@ var main = async (user, repo, labels) => {
         resolve(data);
     });
     readme=readme+'\n'+ref;
-    var ref=fs.writeFileSync('README.md',readme,function (err) {
+    var ref=fs.writeFileSync('docs/README.md',readme,function (err) {
         if (err) {
             console.log(err);
             reject(err);

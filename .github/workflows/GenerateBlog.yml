@@ -4,7 +4,7 @@ on: [issues,push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest #ubuntu-latest
     permissions:                # Job-level permissions configuration starts here
       contents: write           # 'write' access to repository contents
       pull-requests: write      # 'write' access to pull requests
@@ -33,6 +33,6 @@ jobs:
         git config user.email github-actions@github.com
         git checkout main
         git pull --ff
-        git add _posts/*
+        git add .
         git commit -m "feat: github action generate blog"
         git push
