@@ -89,9 +89,11 @@ ${body}
 return { fileName, content };
 }
 
+var projectPath="docs";
+
 async function writeArticleToFile(article) {
 return new Promise((resolve, reject) => {
-    var projectPath="docs";
+
     // 使用fs.existsSync()方法检查文件夹是否存在
     if (!fs.existsSync(projectPath)) {
         console.log(`Folder '${projectPath}' does not exist. Creating...`);
@@ -135,13 +137,13 @@ var main = async (user, repo, labels) => {
         //console.log(issue)
         var article = await issueToArticle(issue);
         await writeArticleToFile(article);
-        var repository_url= `https://github.com/repos/${user}/${repo}/`;
-        var filePath = `_posts/${article.fileName}.md`;
-        readme+=`- [${article.fileName}](${repository_url}${filePath})  [查看原文](${issue.html_url})
+        var repository_url= `https://${user}.github.io/${repo}`;
+        var filePath = `${projectPath}/`;
+        readme+=`- [${article.fileName}](https://${user}.github.io/${repo}/${article.fileName})  ([查看原文](${issue.html_url}))
 `;
         //console.log(readme)
     }
-    var ref=fs.readFileSync('References.md',function (err,data) {
+    var ref=fs.readFileSync('template/footer.html',function (err,data) {
         if (err) {
             console.log(err);
             reject(err);
