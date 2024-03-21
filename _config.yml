@@ -37,7 +37,7 @@ avatar:
 rss:
   href: /atom.xml
   class: fa fa-rss fa-1x
-favicon: favicon-fish.ico
+favicon: /favicon-fish.ico
 
 Skills:
   cpp: https://img.shields.io/badge/-C++-black?style=flat-square&logo=c

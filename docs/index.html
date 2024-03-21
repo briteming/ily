@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
-    <meta name="description" content="{{config['description']}}">
-    <meta name="keywords" content="{{config.keywords}}">
-    <link rel="shortcut icon" href="{{config.favicon}}" />
-    <link rel="alternate" type="application/rss+xml" title="{{config.author}}" href="{{config.rss }}">
+    <meta name="description" content="A scholar magazine/journal like blog，FUTURE & CIVILIZATION，Natural/Social Philosophy & Infomation Sciences">
+    <meta name="keywords" content="LordYao,scholar,要庆生,yaoqs,FUTURE & CIVILIZATION，Natural/Social Philosophy & Infomation Sciences">
+    <link rel="shortcut icon" href="/favicon-fish.ico" />
+    <link rel="alternate" type="application/rss+xml" title="LordYao" href="[object Object]">
     <link href="//cdn.staticfile.org/Primer/21.0.7/primer.css" rel="stylesheet" />
     <link href="//cdn.staticfile.org/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="//cdn.staticfile.org/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <script async src="//use.fontawesome.com/f2ad64ea31.js"></script>
-    <title>{{config['author']}}</title>
+    <title>LordYao</title>
 
     <!--JQuery-->
     <script type="text/javascript" src="//cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script>
@@ -133,7 +133,7 @@
 <body>
     <header>
         <div id="fork_me_on_github">
-            <a href="https://github.com/{{config.githubname}}" class="github-corner" aria-label="View source on GitHub">
+            <a href="https://github.com/yaoqs" class="github-corner" aria-label="View source on GitHub">
                 <svg width="8em" height="8em" viewBox="0 0 250 250"
                     style="fill:#151515; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
                     aria-hidden="true">
@@ -151,35 +151,63 @@
             </a>
         </div>
 
-        {% if config.avatar.url %}
-        <a id="avatar" href="https://github.com/{{config.githubname}}"><img id="avatar_img" src="{{config.avatar.url }}"
-                alt="{{config.title}}" /></a>
-        {% endif %}
-        <h1><img id="author" href="https://github.com/{{config.githubname}}"> {{config.author}} </img></h1>
+        
+        <a id="avatar" href="https://github.com/yaoqs"><img id="avatar_img" src="/images/avatar_sx_lite.png"
+                alt="LordYao" /></a>
+        
+        <h1><img id="author" href="https://github.com/yaoqs"> LordYao </img></h1>
         <div style="display:inline-flex;align-items: center;width: 100%;">
-            {% if(config.Social_Accounts.github_follow) %}
+            
             <div id="github-iframe">
-                <iframe src="{{ config.Social_Accounts.github_follow.href }}" scrolling="no" frameborder="0"
+                <iframe src="https://ghbtns.com/github-btn.html?user=yaoqs&type=follow&count=true" scrolling="no" frameborder="0"
                     width="150px" height="20px"></iframe>
             </div>
-            {% endif %}
-            {% if (config.Social_Accounts.weibostar) %}
+            
+            
             <div id="weibo"></div>
-            <script src="{{config.Social_Accounts.weibostar.js}}" type="text/javascript" crossorigin="anonymous" async></script>
-            {{config.Social_Accounts.weibostar.code}}{{config.Social_Accounts.weibostar.button}}
-            {% endif %}
-            {% if (config.rss) %}
-            <a id="rss" href="{{ config.rss.href }}" title="RSS"><i class="{{ config.rss.class }}"></i></a>
-            {% endif %}
+            <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" crossorigin="anonymous" async></script>
+            <iframe src="https://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=2&amp;uid=1262655355&amp;width=86&amp;height=24&amp;language=zh_cn" scrolling="no" marginheight="0" width="86" height="24" frameborder="0"></iframe><wb:follow-button uid="1262655355" type="red_2" width="86" height="24"></wb:follow-button>
+            
+            
+            <a id="rss" href="/atom.xml" title="RSS"><i class="fa fa-rss fa-1x"></i></a>
+            
             <div style=" text-align: right;width: 100%;">
-                {% if (config.slogan) %}
+                
                 <span id="slogan">
                     <ul>
-                        {% for key,value in config.slogan %}
+                        
                         <li style="display: none;">
-                            {{value}}
+                            解放思想，发展生产力
                         </li>
-                        {% endfor %}
+                        
+                        <li style="display: none;">
+                            为天地立心，为生民立命，为往圣继绝学，为万世开太平。
+                        </li>
+                        
+                        <li style="display: none;">
+                            知行合一
+                        </li>
+                        
+                        <li style="display: none;">
+                            凡事预则立，不预则废
+                        </li>
+                        
+                        <li style="display: none;">
+                            茍日新，日日新，又日新
+                        </li>
+                        
+                        <li style="display: none;">
+                            天之道，利而不害；圣人之道，为而不争
+                        </li>
+                        
+                        <li style="display: none;">
+                            吾尝终日而思矣，不如须臾之所学也。吾尝跂而望矣，不如登高之博见也。君子生非异也，善假于物也。
+                        </li>
+                        
+                        <li style="display: none;">
+                            练得身形似鹤形，千株松下两函经。我来问道无馀说，云在青霄水在瓶。
+                        </li>
+                        
                     </ul>
                 </span>
 
@@ -198,33 +226,56 @@
                     lunbo();
                 </script>
                 </span>
-                {% endif %}
+                
             </div>
         </div>
         <hr>
         <div style="display: inline;">
-            <img src="{{config.Author}}"></img><img src="{{config.Address.img}}"></img>
+            <img src="https://img.shields.io/badge/Author-Yao_Qingsheng-ffffff?style=flat-square&logo=china&logoColor=black"></img><img src="https://img.shields.io/badge/Address-Department_of_Natural_Philosophy_&_Infomation_Sciences,CHINA-blue?style=flat-square&logo=china&logoColor=black"></img>
         </div>
         <div id="follow-icons" style="display: inline;">
             <!--http://www.fontawesome.com.cn/faicons/#web-application -->
-
-            {%- for follow,value in config.Social_Accounts -%}
-            {% if (value.href) %}
-            <a href="{{ value.href }}" title="{{ value.name }}"><img src="{{ value.img }}"
-                    class="{{ value.class }}"><img></a>
-            {% endif %}
-            {%- endfor -%}
-
-            {%- for key,value in config.Skills -%}
-            <img src="{{ value }}"><img>
-            {%- endfor -%}
-
-        </div>
+            <a href="https://space.bilibili.com/19354848" title="哔哩哔哩/bilibili"><img src="https://img.shields.io/badge/Bilibili-ffffff?style=flat-square&logo=Bilibili&logoColor=darkpink"
+                    class="fab fa-twitch fa-1x"><img></a>
+            
+            <a href="https://blog.csdn.net/yaokingson" title="csdn"><img src="https://img.shields.io/badge/CSDN-yaokingson-ffffff?style=flat-square&logo=data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAw9JREFUWEftlllsTVEUhr+1r5ZwO6ExxPRASU1piBiTGhJDQg2RaClp4oFGNU3MISQVIWYihpoeDNEQQ0LE8ECEFzU8iEgIMVZdWtWBuvaW49DrSk/PPdUQifV0kvPvf317rXXO3hKcmmL4iyH/Af7dCnROQlKGQOduSEw8fAli3rzCPLgLN69AdWVEk+V9BvoMRE3LRrr2ckxgqqsw549iTuyFmk/1gkQOEBWNzF6KpE5ARCLanXn2CJ0/F8oCjvrIAJo1Ry3bjvRICTMyxc8w929BeSnEt0J6D0RaJoZp9OWTmN35vwEgClmyFWX1+3uYQDF631oouhpurHzIiInIjFykuf/bO3PnOnrNvIYDSNos1PTcUPKnD9H5c+D9O+c2tO+CWr4DWrVFb1kCNy42ECChNWrbGaRpM3s3leXohekQeOU+A1YFEhLhxeOGD6Fk5qHGZ9Ya6P3rMOePuSf3oHAeQuVDFVy0v3Fr92Vv0dnjIPjZg7271BkguR++VQWh3Z87gjm4wd3Ro8IRQCZmoTJyau2+rJ0Pt655tHeXOwNkr0KlTggBzBkD70rcHT0qHAHU0u32v97qv9bo9AHWg0d7d7kzwIpdSO8BNkAwiM6wnxs7nFuwaBOqf2qoBTOHwseqxs6PM0DWQtTY9BDAskx4eO/PATBsHL6c1aHP8HgBpnDnHwTwx6H2XECaRNlz8KEMnTfFPvkijTYdoGNXKLoCpu67b73HscxdiRqeVpvO3L+NXp8HFeXuCD37oxZsRFrEoE8fxBzeVuea+u8DCYmojYWIPy4EESjGnDqAuXEBPrwPN/U1ge59kVGTkcGjEaXs6lVXomcNawCAtaTvINSiLUiU3YofYaySlrywj+XPNWBBtuuIRNsnZ5j29XN0Tuin9vO7yG5EVjlz1yDxrd1L/2ty6xDbvBism1MdERmAtdAfi6RlISMnIf5YVxBT+gZz6STm7CGoqnDURw7wwyIqGpL7IUl9oG0nJCYOrN7XfMSUBuDlE/tq/ugeaPdft3cA1717E/wH+OsV+Ao8AzlQq0l0/gAAAABJRU5ErkJggg==&logoColor=black"
+                    class="fab fa-bcsdn fa-1x"><img></a>
+            
+            <a href="https://yaoqs.deno.dev/" title="deno"><img src="https://img.shields.io/badge/yaoqs.deno.dev-ffffff?style=flat-square&logo=Deno&logoColor=black"
+                    class="fab fa-deno fa-1x"><img></a>
+            
+            <a href="https://hub.docker.com/u/lordyao" title="dockerhub"><img src="https://img.shields.io/badge/docker-lordyao-ffffff?style=flat-square&logo=Docker&logoColor=ffffff"
+                    class="fab fa-docker fa-1x"><img></a>
+            
+            <a href="https://gitee.com/yaoqs" title="gitee"><img src="https://img.shields.io/badge/gitee.com/yaoqs-ffffff?style=flat-square&logo=Gitee&logoColor=black"
+                    class="fab fa-git fa-1x"><img></a>
+            
+            <a href="https://ghbtns.com/github-btn.html?user=yaoqs&type=follow&count=true" title=""><img src=""
+                    class=""><img></a>
+            
+            <a href="https://github.com/yaoqs" title="github"><img src="https://img.shields.io/badge/yaoqs.github.io-ffffff?style=flat-square&logo=Github&logoColor=black)"
+                    class="fab fa-github fa-1x"><img></a>
+            
+            <a href="https://gitlab.com/yaoqs" title="gitlab"><img src="https://img.shields.io/badge/gitlab.com/yaoqs-ffffff?style=flat-square&logo=Gitlab&logoColor=black"
+                    class="fab fa-gitlab fa-1x"><img></a>
+            
+            <a href="https://www.tiktok.com/@lord_honor_yao" title="tiktok"><img src="https://img.shields.io/badge/tiktok-ffffff?style=flat-square&logo=tiktok&logoColor=black"
+                    class="fab fa-tiktok fa-1x"><img></a>
+            
+            <a href="http://twitter.com/Lord_Honor_Yao" title="twitter/推特"><img src="https://img.shields.io/badge/twitter-ffffff?style=flat-square&logo=twitter&logoColor=lightblue"
+                    class="fab fa-twitter fa-1x"><img></a>
+            
+            <a href="http://weibo.com/lordyao" title="weibo/微博"><img src="https://img.shields.io/badge/weibo-@lordyao-ffffff?style=flat-square&logo=Sinaweibo&logoColor=red"
+                    class="fab fa-weibo fa-1x"><img></a>
+            
+            <a href="https://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=2&amp;uid=1262655355&amp;width=86&amp;height=24&amp;language=zh_cn" title="加关注"><img src=""
+                    class=""><img></a>
+            <img src="https://img.shields.io/badge/-C++-black?style=flat-square&logo=c"><img><img src="https://img.shields.io/badge/Matlab-black?style=flat-square&logo=mathworksmatlab"><img><img src="https://img.shields.io/badge/Html+css+js-black?style=flat-square&logo=Html5"><img><img src="https://img.shields.io/badge/d3.js-black?style=flat-square&logo=d3.js"><img><img src="https://img.shields.io/badge/node.js-black?style=flat-square&logo=node.js"><img><img src="https://img.shields.io/badge/Echarts.js-black?style=flat-square&logo=Apacheecharts"><img></div>
         <hr>
     </header>
 
 
-    {% block body %}<p>{{ body }}</p>{% endblock %}
+    <p><span><a href="https://yaoqs.github.io/Issues-LordYao/创刊-20240131">创刊-20240131</a></span><br></p>
 
 
     <footer>
