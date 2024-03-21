@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="description" content="A scholar magazine/journal like blog，FUTURE & CIVILIZATION，Natural/Social Philosophy & Infomation Sciences">
+    <meta name="keywords" content="LordYao,scholar,要庆生,yaoqs,FUTURE & CIVILIZATION，Natural/Social Philosophy & Infomation Sciences">
+    <link rel="shortcut icon" href="favicon-fish.ico" />
+    <link rel="alternate" type="application/rss+xml" title="LordYao" href="[object Object]">
+    <link href="//cdn.staticfile.org/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href="//cdn.staticfile.org/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="//cdn.staticfile.org/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script async src="//use.fontawesome.com/f2ad64ea31.js"></script>
+    <title>LordYao</title>
+
+    <!--JQuery-->
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+    <!--d3js-->
+    <script src="//d3js.org/d3.v7.min.js"></script>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 45px;
+        font-size: 16px;
+        font-family: sans-serif;
+        line-height: 1.25;
+    }
+
+    header {
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+        margin-bottom: 16px;
+    }
+
+    footer {
+        margin-top: 64px;
+        text-align: center;
+        font-size: small;
+    }
+
+    /**********************************/
+    #avatar img {
+        margin-top: 4em;
+        margin-bottom: -1.73em;
+        width: 10em;
+        /*height			: 9em;*/
+        border-radius: 4.5em;
+        -moz-border-radius: 4.5em;
+        -webkit-border-radius: 4.5em;
+        border: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="fork_me_on_github">
+            <a href="https://github.com/yaoqs" class="github-corner" aria-label="View source on GitHub">
+                <svg width="8em" height="8em" viewBox="0 0 250 250"
+                    style="fill:#151515; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);"
+                    aria-hidden="true">
+                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                    <path
+                        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                    <path
+                        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                        fill="currentColor" class="octo-body">
+
+                    </path>
+                </svg>
+
+            </a>
+        </div>
+
+        
+        <a id="avatar" href="https://github.com/yaoqs"><img id="avatar_img" src="/images/avatar_sx_lite.png"
+                alt="LordYao" /></a>
+        
+        <h1><img id="author" href="https://github.com/yaoqs"> LordYao </img></h1>
+        <div style="display:inline-flex;align-items: center;width: 100%;">
+            
+            <div id="github-iframe">
+                <iframe src="https://ghbtns.com/github-btn.html?user=yaoqs&type=follow&count=true" scrolling="no" frameborder="0"
+                    width="150px" height="20px"></iframe>
+            </div>
+            
+            
+            <div id="weibo"></div>
+            <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript"></script>
+            <iframe src="https://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=2&amp;uid=1262655355&amp;width=86&amp;height=24&amp;language=zh_cn" scrolling="no" marginheight="0" width="86" height="24" frameborder="0"></iframe>
+            
+            
+            <a id="rss" href="/atom.xml" title="RSS"><i class="fa fa-rss fa-1x"></i></a>
+            
+            <div  style=" text-align: right;width: 100%;">
+                
+                <span id="slogan">
+                    <ul>
+                        
+                        <li style="display: none;">
+                            解放思想，发展生产力
+                        </li>
+                        
+                        <li style="display: none;">
+                            为天地立心，为生民立命，为往圣继绝学，为万世开太平。
+                        </li>
+                        
+                        <li style="display: none;">
+                            知行合一
+                        </li>
+                        
+                        <li style="display: none;">
+                            凡事预则立，不预则废
+                        </li>
+                        
+                        <li style="display: none;">
+                            茍日新，日日新，又日新
+                        </li>
+                        
+                        <li style="display: none;">
+                            天之道，利而不害；圣人之道，为而不争
+                        </li>
+                        
+                        <li style="display: none;">
+                            吾尝终日而思矣，不如须臾之所学也。吾尝跂而望矣，不如登高之博见也。君子生非异也，善假于物也。
+                        </li>
+                        
+                        <li style="display: none;">
+                            练得身形似鹤形，千株松下两函经。我来问道无馀说，云在青霄水在瓶。
+                        </li>
+                        
+                    </ul>
+                </span>
+
+                <script>
+                    var sel = $('#slogan > ul > li');
+                    //console.log(sel)
+                    //console.log(sel[Math.floor(Math.random()*sel.length)].style)//
+                    //setInterval(lunbo,30000);
+                    function lunbo() {
+                        arguments.callee.pre = arguments.callee.pre || 0;
+                        sel[arguments.callee.pre].style.display = "none";
+                        arguments.callee.pre = Math.floor(Math.random() * sel.length);
+                        sel[arguments.callee.pre].style.display = "inline-block";
+                        setTimeout(lunbo, 30000);
+                    }
+                    lunbo();
+                </script>
+                </span>
+                
+            </div>
+        </div>
+        <hr>
+        <div style="display: inline-flex;">
+            <img src="https://img.shields.io/badge/Author-Yao_Qingsheng-ffffff?style=flat-square&logo=china&logoColor=black"></img><img src="https://img.shields.io/badge/Address-Department_of_Natural_Philosophy_&_Infomation_Sciences,CHINA-blue?style=flat-square&logo=china&logoColor=black"></img>
+        </div>
+        <div id="follow-icons" style="display: inline;">
+            <!--http://www.fontawesome.com.cn/faicons/#web-application -->
+            <a href="https://space.bilibili.com/19354848" title="哔哩哔哩/bilibili"><img src="https://img.shields.io/badge/Bilibili-ffffff?style=flat-square&logo=Bilibili&logoColor=darkpink"
+                    class="fab fa-twitch fa-1x"><img></a>
+            
+            <a href="https://blog.csdn.net/yaokingson" title="csdn"><img src="https://img.shields.io/badge/CSDN-yaokingson-ffffff?style=flat-square&logo=data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAw9JREFUWEftlllsTVEUhr+1r5ZwO6ExxPRASU1piBiTGhJDQg2RaClp4oFGNU3MISQVIWYihpoeDNEQQ0LE8ECEFzU8iEgIMVZdWtWBuvaW49DrSk/PPdUQifV0kvPvf317rXXO3hKcmmL4iyH/Af7dCnROQlKGQOduSEw8fAli3rzCPLgLN69AdWVEk+V9BvoMRE3LRrr2ckxgqqsw549iTuyFmk/1gkQOEBWNzF6KpE5ARCLanXn2CJ0/F8oCjvrIAJo1Ry3bjvRICTMyxc8w929BeSnEt0J6D0RaJoZp9OWTmN35vwEgClmyFWX1+3uYQDF631oouhpurHzIiInIjFykuf/bO3PnOnrNvIYDSNos1PTcUPKnD9H5c+D9O+c2tO+CWr4DWrVFb1kCNy42ECChNWrbGaRpM3s3leXohekQeOU+A1YFEhLhxeOGD6Fk5qHGZ9Ya6P3rMOePuSf3oHAeQuVDFVy0v3Fr92Vv0dnjIPjZg7271BkguR++VQWh3Z87gjm4wd3Ro8IRQCZmoTJyau2+rJ0Pt655tHeXOwNkr0KlTggBzBkD70rcHT0qHAHU0u32v97qv9bo9AHWg0d7d7kzwIpdSO8BNkAwiM6wnxs7nFuwaBOqf2qoBTOHwseqxs6PM0DWQtTY9BDAskx4eO/PATBsHL6c1aHP8HgBpnDnHwTwx6H2XECaRNlz8KEMnTfFPvkijTYdoGNXKLoCpu67b73HscxdiRqeVpvO3L+NXp8HFeXuCD37oxZsRFrEoE8fxBzeVuea+u8DCYmojYWIPy4EESjGnDqAuXEBPrwPN/U1ge59kVGTkcGjEaXs6lVXomcNawCAtaTvINSiLUiU3YofYaySlrywj+XPNWBBtuuIRNsnZ5j29XN0Tuin9vO7yG5EVjlz1yDxrd1L/2ty6xDbvBism1MdERmAtdAfi6RlISMnIf5YVxBT+gZz6STm7CGoqnDURw7wwyIqGpL7IUl9oG0nJCYOrN7XfMSUBuDlE/tq/ugeaPdft3cA1717E/wH+OsV+Ao8AzlQq0l0/gAAAABJRU5ErkJggg==&logoColor=black"
+                    class="fab fa-bcsdn fa-1x"><img></a>
+            
+            <a href="https://yaoqs.deno.dev/" title="deno"><img src="https://img.shields.io/badge/yaoqs.deno.dev-ffffff?style=flat-square&logo=Deno&logoColor=black"
+                    class="fab fa-deno fa-1x"><img></a>
+            
+            <a href="https://hub.docker.com/u/lordyao" title="dockerhub"><img src="https://img.shields.io/badge/docker-lordyao-ffffff?style=flat-square&logo=Docker&logoColor=ffffff"
+                    class="fab fa-docker fa-1x"><img></a>
+            
+            <a href="https://gitee.com/yaoqs" title="gitee"><img src="https://img.shields.io/badge/gitee.com/yaoqs-ffffff?style=flat-square&logo=Gitee&logoColor=black"
+                    class="fab fa-git fa-1x"><img></a>
+            
+            <a href="https://ghbtns.com/github-btn.html?user=yaoqs&type=follow&count=true" title=""><img src=""
+                    class=""><img></a>
+            
+            <a href="https://github.com/yaoqs" title="github"><img src="https://img.shields.io/badge/yaoqs.github.io-ffffff?style=flat-square&logo=Github&logoColor=black)"
+                    class="fab fa-github fa-1x"><img></a>
+            
+            <a href="https://gitlab.com/yaoqs" title="gitlab"><img src="https://img.shields.io/badge/gitlab.com/yaoqs-ffffff?style=flat-square&logo=Gitlab&logoColor=black"
+                    class="fab fa-gitlab fa-1x"><img></a>
+            
+            <a href="https://www.tiktok.com/@lord_honor_yao" title="tiktok"><img src="https://img.shields.io/badge/tiktok-ffffff?style=flat-square&logo=tiktok&logoColor=black"
+                    class="fab fa-tiktok fa-1x"><img></a>
+            
+            <a href="http://twitter.com/Lord_Honor_Yao" title="twitter/推特"><img src="https://img.shields.io/badge/twitter-ffffff?style=flat-square&logo=twitter&logoColor=lightblue"
+                    class="fab fa-twitter fa-1x"><img></a>
+            
+            <a href="http://weibo.com/lordyao" title="weibo/微博"><img src="https://img.shields.io/badge/weibo-@lordyao-ffffff?style=flat-square&logo=Sinaweibo&logoColor=red"
+                    class="fab fa-weibo fa-1x"><img></a>
+            
+            <a href="https://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=2&amp;uid=1262655355&amp;width=86&amp;height=24&amp;language=zh_cn" title="加关注"><img src=""
+                    class=""><img></a>
+            <img src="https://img.shields.io/badge/-C++-black?style=flat-square&logo=c"><img><img src="https://img.shields.io/badge/Matlab-black?style=flat-square&logo=mathworksmatlab"><img><img src="https://img.shields.io/badge/Html+css+js-black?style=flat-square&logo=Html5"><img><img src="https://img.shields.io/badge/d3.js-black?style=flat-square&logo=d3.js"><img><img src="https://img.shields.io/badge/node.js-black?style=flat-square&logo=node.js"><img><img src="https://img.shields.io/badge/Echarts.js-black?style=flat-square&logo=Apacheecharts"><img></div>
+    </header>
+
+
+    <p><span><a href="https://yaoqs.github.io/Issues-LordYao/创刊-20240131">创刊-20240131</a></span><br></p>
+
+
+    <footer>
+        <hr />
+        <span id="donate"><a href="https://yaoqs.github.io/Donate" title="大吉大利 今晚吃鸡">Donate & Reward </a></span><br />
+        <span>*Corresponding Author: <a id="author" href="https://github.com/yaoqs">LordYao</a> &lt;Email:
+            350788415@qq.com&gt;<br />
+            Copyright &copy;2023-<span id="year"></span>.All Rights Reserved.CC 4.0 BY-NC-SA</span><br />
+        <span> Designed by <a href="https://yaoqs.github.io" target="_blank">LordYao</a>.</span>
+        Powered by <a href="https://pages.github.com/" target="_blank">Github Pages</a>.
+
+        <p>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/gh/yaoqs/donate-plugin/zanzhu_yaoqs.min.js"></script>
+            <script>
+                $(function () {
+                    new Rewardtip(
+                        {
+                            "tiptext": "谢谢支持/Thanks...",
+                            "tipimg": { img: "/images/ali.gif", width: "50px", height: "50px" },  //可选
+                            "more": "https://yaoqs.github.io/Donate",
+                            "tipshow": "<img src='/images/ali.gif'/>",                     //可选
+                            "list": [
+                                { name: "微信收款码", qrimg: "/images/微信收款码.png" },
+                                { name: "微信打赏码", qrimg: "/images/微信打赏码.png" },
+                                { name: "支付宝收款码", qrimg: "/images/支付宝收款码.jpg" },
+                                { name: "支付宝红包码", qrimg: "/images/支付宝红包码.jpg" }
+                            ],
+                            "link": [
+                                { name: "paypal", desc: "paypal.me/LordYao", link: "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=243292490@qq.com&currency_code=USD&amount=1&return=http://yaoqs.github.com/about&item_name=LordYao%27s%20Blog&undefined_quantity=1" }
+                            ]/*,
+                            fn:(function(){
+                                return alert("解放思想，发展生产力");
+                            })()*/
+                        });
+                })
+
+                jQuery(document).ready(() => {
+                    d3.select("body").select("#year").text(() => { return new Date(Date.now()).getFullYear() })
+                    d3.select("body").select("footer").append("div").attr("id", "qrcode")
+                    $('footer > #qrcode').qrcode({ width: 173, height: 173, text: document.URL })
+                })
+            </script>
+    </footer>
+</body>
+
+</html>
