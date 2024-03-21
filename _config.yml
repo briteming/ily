@@ -1,0 +1,205 @@
+# *1.Site
+title: LordYao
+subtitle: FUTURE & CIVILIZATION
+description: A scholar magazine/journal like blog，FUTURE & CIVILIZATION，Natural/Social Philosophy & Infomation Sciences
+keywords: LordYao,scholar,要庆生,yaoqs,FUTURE & CIVILIZATION，Natural/Social Philosophy & Infomation Sciences
+author: LordYao
+Email: 350788415@qq.com
+Author: https://img.shields.io/badge/Author-Yao_Qingsheng-ffffff?style=flat-square&logo=china&logoColor=black
+githubname: yaoqs
+Address:
+  key: Department of Natural/Social Philosophy & Infomation Sciences, CHINA
+  img: https://img.shields.io/badge/Address-Department_of_Natural_Philosophy_&_Infomation_Sciences,CHINA-blue?style=flat-square&logo=china&logoColor=black
+
+logo: /images/githubavatar.png
+slogan:
+  sub1: 解放思想，发展生产力
+  sub2: 为天地立心，为生民立命，为往圣继绝学，为万世开太平。
+  sub3: 知行合一
+  sub4: 凡事预则立，不预则废
+  sub5: 茍日新，日日新，又日新
+  sub6: 天之道，利而不害；圣人之道，为而不争
+  sub7: 吾尝终日而思矣，不如须臾之所学也。吾尝跂而望矣，不如登高之博见也。君子生非异也，善假于物也。
+  sub8: 练得身形似鹤形，千株松下两函经。我来问道无馀说，云在青霄水在瓶。
+
+avatar:
+  # in theme directory(source/images): /images/avatar.gif
+  # in site  directory(source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: /images/avatar_sx_lite.png #author.jpg  #将我们的头像图片放置在blog/themes/next/source/images目录下，填写具体地址
+  # If true, the avatar would be dispalyed in circle.
+  rounded: true #鼠标放在头像上时是否旋转
+  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+  opacity: 1 #头像放缩指数
+  # If true, the avatar would be rotated with the cursor.
+  rotated: true #头像是否设为圆形，否则为矩形
+
+rss:
+  href: /atom.xml
+  class: fa fa-rss fa-1x
+favicon: favicon-fish.ico
+
+Skills:
+  cpp: https://img.shields.io/badge/-C++-black?style=flat-square&logo=c
+  Matlab: https://img.shields.io/badge/Matlab-black?style=flat-square&logo=mathworksmatlab
+  html+css+js: https://img.shields.io/badge/Html+css+js-black?style=flat-square&logo=Html5
+  d3.js: https://img.shields.io/badge/d3.js-black?style=flat-square&logo=d3.js
+  Node.js: https://img.shields.io/badge/node.js-black?style=flat-square&logo=node.js
+  Echarts.js: https://img.shields.io/badge/Echarts.js-black?style=flat-square&logo=Apacheecharts
+
+# Social Accounts
+# http://www.fontawesome.com.cn/faicons/#web-application
+# https://www.w3schools.cn/icons/fontawesome5_icons_brands.asp
+# 按照字母排序
+Social_Accounts:
+  Azure:
+    name: Azure
+    href:
+    class: fa fa-terminal fa-1x
+  bilibili:
+    name: 哔哩哔哩/bilibili
+    href: https://space.bilibili.com/19354848
+    img: https://img.shields.io/badge/Bilibili-ffffff?style=flat-square&logo=Bilibili&logoColor=darkpink
+    class: fab fa-twitch fa-1x
+  csdn:
+    name: csdn
+    href: https://blog.csdn.net/yaokingson
+    img: https://img.shields.io/badge/CSDN-yaokingson-ffffff?style=flat-square&logo=data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAw9JREFUWEftlllsTVEUhr+1r5ZwO6ExxPRASU1piBiTGhJDQg2RaClp4oFGNU3MISQVIWYihpoeDNEQQ0LE8ECEFzU8iEgIMVZdWtWBuvaW49DrSk/PPdUQifV0kvPvf317rXXO3hKcmmL4iyH/Af7dCnROQlKGQOduSEw8fAli3rzCPLgLN69AdWVEk+V9BvoMRE3LRrr2ckxgqqsw549iTuyFmk/1gkQOEBWNzF6KpE5ARCLanXn2CJ0/F8oCjvrIAJo1Ry3bjvRICTMyxc8w929BeSnEt0J6D0RaJoZp9OWTmN35vwEgClmyFWX1+3uYQDF631oouhpurHzIiInIjFykuf/bO3PnOnrNvIYDSNos1PTcUPKnD9H5c+D9O+c2tO+CWr4DWrVFb1kCNy42ECChNWrbGaRpM3s3leXohekQeOU+A1YFEhLhxeOGD6Fk5qHGZ9Ya6P3rMOePuSf3oHAeQuVDFVy0v3Fr92Vv0dnjIPjZg7271BkguR++VQWh3Z87gjm4wd3Ro8IRQCZmoTJyau2+rJ0Pt655tHeXOwNkr0KlTggBzBkD70rcHT0qHAHU0u32v97qv9bo9AHWg0d7d7kzwIpdSO8BNkAwiM6wnxs7nFuwaBOqf2qoBTOHwseqxs6PM0DWQtTY9BDAskx4eO/PATBsHL6c1aHP8HgBpnDnHwTwx6H2XECaRNlz8KEMnTfFPvkijTYdoGNXKLoCpu67b73HscxdiRqeVpvO3L+NXp8HFeXuCD37oxZsRFrEoE8fxBzeVuea+u8DCYmojYWIPy4EESjGnDqAuXEBPrwPN/U1ge59kVGTkcGjEaXs6lVXomcNawCAtaTvINSiLUiU3YofYaySlrywj+XPNWBBtuuIRNsnZ5j29XN0Tuin9vO7yG5EVjlz1yDxrd1L/2ty6xDbvBism1MdERmAtdAfi6RlISMnIf5YVxBT+gZz6STm7CGoqnDURw7wwyIqGpL7IUl9oG0nJCYOrN7XfMSUBuDlE/tq/ugeaPdft3cA1717E/wH+OsV+Ao8AzlQq0l0/gAAAABJRU5ErkJggg==&logoColor=black
+    class: fab fa-bcsdn fa-1x
+  deno:
+    name: deno
+    href: https://yaoqs.deno.dev/
+    img: https://img.shields.io/badge/yaoqs.deno.dev-ffffff?style=flat-square&logo=Deno&logoColor=black
+    class: fab fa-deno fa-1x
+  dingding:
+    name: dingding/钉钉
+    href:
+    class: fa fa-comment fa-1x
+  dockerhub:
+    name: dockerhub
+    href: https://hub.docker.com/u/lordyao
+    img: https://img.shields.io/badge/docker-lordyao-ffffff?style=flat-square&logo=Docker&logoColor=ffffff
+    class: fab fa-docker fa-1x
+  douban:
+    name: 豆瓣
+    href:
+    class: fa fa-imdb fa-1x
+  facebook:
+    name: facebook
+    href:
+    img:
+    class: fab fa-facebook fa-1x
+  gitee:
+    name: gitee
+    href: https://gitee.com/yaoqs
+    img: https://img.shields.io/badge/gitee.com/yaoqs-ffffff?style=flat-square&logo=Gitee&logoColor=black
+    class: fab fa-git fa-1x
+  github_follow:
+    href: https://ghbtns.com/github-btn.html?user=yaoqs&type=follow&count=true
+    code: <iframe src="https://ghbtns.com/github-btn.html?user=yaoqs&amp;type=follow&amp;count=true" scrolling="no" width="150" height="20" frameborder="0"></iframe>
+  github:
+    name: github
+    href: https://github.com/yaoqs
+    img: https://img.shields.io/badge/yaoqs.github.io-ffffff?style=flat-square&logo=Github&logoColor=black)
+    class: fab fa-github fa-1x
+  gitlab:
+    name: gitlab
+    href: https://gitlab.com/yaoqs
+    img: https://img.shields.io/badge/gitlab.com/yaoqs-ffffff?style=flat-square&logo=Gitlab&logoColor=black
+    class: fab fa-gitlab fa-1x
+  instagram:
+    name: instagram
+    href:
+    class: fab fa-instagram fa-1x
+  linkedin:
+    name: linkin/领英
+    href:
+    class: fab fa-linkedin-in fa-1x
+  pinterest:
+    name: pinterest
+    href:
+    class: fab fa-pinterest-square fa-1x
+  QQ:
+    name: QQ
+    href:
+    class: fab fa-qq fa-1x
+  reddit:
+    name: reddit
+    href:
+    class: fab fa-reddit-alien fa-1x
+  skype:
+    name: skype
+    href:
+    class: fab fa-skype fa-1x
+  slack:
+    name: slack
+    href:
+    class: fab fa-slack fa-1x
+  StackOverflow:
+    name: StackOverflow
+    href:
+    class: fab fa-stack-overflow fa-1x
+  telegram:
+    name: telegram
+    href:
+    class: fab fa-telegram-plane fa-1x
+  tiktok:
+    name: tiktok
+    href: https://www.tiktok.com/@lord_honor_yao
+    img: https://img.shields.io/badge/tiktok-ffffff?style=flat-square&logo=tiktok&logoColor=black
+    class: fab fa-tiktok fa-1x
+  tumblr:
+    name: tumblr
+    href:
+    class: fab fa-tumblr fa-1x
+  twitter:
+    name: twitter/推特
+    href: http://twitter.com/Lord_Honor_Yao
+    img: https://img.shields.io/badge/twitter-ffffff?style=flat-square&logo=twitter&logoColor=lightblue
+    class: fab fa-twitter fa-1x
+  wechat:
+    name: wechat/微信
+    href:
+    class: fab fa-weixin fa-1x
+  weibo:
+    name: weibo/微博
+    href: http://weibo.com/lordyao
+    img: https://img.shields.io/badge/weibo-@lordyao-ffffff?style=flat-square&logo=Sinaweibo&logoColor=red
+    class: fab fa-weibo fa-1x
+  weibostar:
+    name: 加关注
+    js: https://tjs.sjs.sinajs.cn/open/api/js/wb.js
+    button: <wb:follow-button uid="1262655355" type="red_2" width="86" height="24"></wb:follow-button>
+    href: https://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=2&amp;uid=1262655355&amp;width=86&amp;height=24&amp;language=zh_cn
+    code: <iframe src="https://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=2&amp;uid=1262655355&amp;width=86&amp;height=24&amp;language=zh_cn" scrolling="no" marginheight="0" width="86" height="24" frameborder="0"></iframe>
+  whatsapp:
+    name: whatsapp
+    href:
+    class: fab fa-whatsapp fa-1x
+  youtube:
+    name: youtube
+    href:
+    class: fab fa-youtube-square fa-1x
+  zhifubao:
+    name:
+    class: fab fa-alipay fa-1x
+  zhihu:
+    name: 知乎
+    href:
+    img: https://img.shields.io/badge/Zhihu-ffffff?style=flat-square&logo=Zhihu&logoColor=blue
+    class: fab fa-zhihu fa-1x
+
+
+Reward:
+  enable: true
+  comment: 大吉大利 今晚吃鸡
+  wechatpay: /images/微信收款码.png
+  wechatreward: /images/微信打赏码.png
+  alipay: /images/支付宝收款码.jpg
+  zhifubao_redpackage: /images/支付宝红包码.png
+  paypal:
+    name: paypal.me/LordYao
+    href: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=243292490@qq.com&currency_code=USD&amount=1&return=http://yaoqs.github.com/about&item_name=LordYao%27s%20Blog&undefined_quantity=1
+  #bitcoin: /images/bitcoin.jpg
+
+

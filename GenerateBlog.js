@@ -3,6 +3,11 @@ const yargs = require("yargs");
 const request = require("request");
 const moment = require("moment");
 const fs = require("fs");
+const yaml = require('js-yaml');
+const nunjucks=require('nunjucks')
+
+const { marked } = require('marked');
+//const demo = marked.parse('# Marked in Node.js\n\nRendered by **marked**.');
 
 var argv=yargs
     .option("u", {
@@ -123,15 +128,24 @@ return new Promise((resolve, reject) => {
     });
 }
 
+async function getConfig(){
+    try {
+        let fileContents = fs.readFileSync('_config.yml', 'utf8');
+        let data = yaml.load(fileContents);
+
+        //console.log(data);
+        return data;
+    } catch (e) {
+        console.log(e);
+    }
+}
+
 var main = async (user, repo, labels) => {
     var issues = await getIssues(user, repo, labels);
-    //editreadme
-    var readme = `# Issues-LordYao
-
-## ToC
-
-`;
-//
+    //
+    var bloglist = [];
+    var bloglisthtml=[];
+    //
     for (i in issues) {
         var issue = issues[i];
         //console.log(issue)
@@ -139,26 +153,55 @@ var main = async (user, repo, labels) => {
         await writeArticleToFile(article);
         var repository_url= `https://${user}.github.io/${repo}`;
         var filePath = `${projectPath}/`;
-        readme+=`- [${article.fileName}](https://${user}.github.io/${repo}/${article.fileName})  ([查看原文](${issue.html_url}))
+        bloglist[i]=`- [${article.fileName}](https://${user}.github.io/${repo}/${article.fileName})  ([查看原文](${issue.html_url}))
 `;
+        bloglisthtml[i]=`<span><a href="https://${user}.github.io/${repo}/${article.fileName}">${article.fileName}</a></span><br>`;
         //console.log(readme)
+        //console.log(bloglist[i])
     }
-    var ref=fs.readFileSync('template/footer.html',function (err,data) {
-        if (err) {
-            console.log(err);
-            reject(err);
-            return;
-        }
-        resolve(data);
-    });
-    readme=readme+'\n'+ref;
-    var ref=fs.writeFileSync('docs/README.md',readme,function (err) {
+
+
+    /*//HowtoUseMe.md
+    fs.copyFileSync('README.md','docs/HowtoUseMe.md',fs.constants.COPYFILE_FICLONE,function (err) {
         if (err) {
             console.log(err);
             reject(err);
             return;
         }
     });
+    bloglist[0]=`- [HowtoUseMe](https://${user}.github.io/${repo}/HowtoUseMe})  ([查看原文](https://github.com/${user}//${repo}/))
+`;*/
+
+
+    //readme.md
+    var README=`# ${user}
+
+## Toc
+
+`;
+
+    fs.writeFileSync('docs/README.md',README+bloglist,function (err) {
+        if (err) {
+            console.log(err);
+            reject(err);
+            return;
+        }
+    });
+
+    var config=await getConfig();
+    //console.log(typeof(config.slogan))
+    //index.html
+    var env=nunjucks.configure({ autoescape: false });
+    html= env.render('template/base.html',{config:config,body:bloglisthtml});
+
+    var index=fs.writeFileSync('docs/index.html',html,function (err) {
+        if (err) {
+            console.log(err);
+            reject(err);
+            return;
+        }
+    });
+
 }
 
 process.on("SIGINT", function () {

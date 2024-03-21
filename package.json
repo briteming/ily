@@ -9,7 +9,10 @@
   "author": "yaoqs",
   "license": "MIT",
   "dependencies": {
+    "js-yaml": "^4.1.0",
+    "marked": "^12.0.1",
     "moment": "^2.30.1",
+    "nunjucks": "^3.2.4",
     "request": "^2.88.0",
     "yargs": "^17.7.2"
   }
