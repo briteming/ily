@@ -200,6 +200,7 @@ var main = async (user, repo, labels) => {
             reject(err);
             return;
         }
+        console.log(`generate index.html`);
     });
 
 }

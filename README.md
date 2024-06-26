@@ -43,6 +43,7 @@
   - **[issue2blog](https://github.com/lotosbin/issue2blog/tree/master)**
 - [两款基于 GitHub issues 的博客工具](https://www.v2ex.com/t/253854)
 - [基于Github Issues的博客搭建](https://github.com/superleeyom/blog/issues/38)
+- [基于 Github issues 的单页面静态博客](https://github.com/wuhaoworld/github-issues-blog)
 - [Leeyom's Blog](https://blog.leeyom.top/)
   - [main.py](https://github.com/superleeyom/blog/blob/main/main.py)
   - [.github/workflows/generate_readme.yml](https://github.com/superleeyom/blog/blob/main/.github/workflows/generate_readme.yml)
@@ -60,6 +61,8 @@
 
 ## License 许可证 & Copyright
 
+[![GitHub license](https://badgen.net/github/license/yaoqs/Issues-LordYao)](https://github.com/yaoqs/Issues-LordYao/blob/master/LICENSE) [![GitHub license](https://img.shields.io/github/license/yaoqs/Issues-LordYao.svg)](https://github.com/yaoqs/Issues-LordYao/blob/master/LICENSE)
+
 - 版权声明：Copyright © 2019-2024 要庆生. All rights reserved.
-- 欢迎通过github仓库在线留言或Email <350788415@qq.com>沟通
+- 欢迎通过github仓库在线留言或[![Email](http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png)](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=m_L69OroxPj1qqKjrdvq6rX49PY)沟通
 - 欢迎star、fork或共同参与维护仓库，并请保留页面底部版权信息，谢谢！
