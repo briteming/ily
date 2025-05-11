@@ -154,8 +154,8 @@ Social_Accounts:
     class: fab fa-tumblr fa-1x
   twitter:
     name: twitter/推特
-    href: http://twitter.com/Lord_Honor_Yao
-    img: https://img.shields.io/badge/twitter-ffffff?style=flat-square&logo=twitter&logoColor=lightblue
+    href: http://x.com/Lord_Honor_Yao
+    img: https://img.shields.io/badge/Lord_Honor_Yao-ffffff?style=flat-square&logo=x&logoColor=lightblue
     class: fab fa-twitter fa-1x
   wechat:
     name: wechat/微信
@@ -185,7 +185,7 @@ Social_Accounts:
     class: fab fa-alipay fa-1x
   zhihu:
     name: 知乎
-    href:
+    href: https://www.zhihu.com/people/yaoqs
     img: https://img.shields.io/badge/Zhihu-ffffff?style=flat-square&logo=Zhihu&logoColor=blue
     class: fab fa-zhihu fa-1x
 

@@ -63,6 +63,6 @@
 
 [![GitHub license](https://badgen.net/github/license/yaoqs/Issues-LordYao)](https://github.com/yaoqs/Issues-LordYao/blob/master/LICENSE) [![GitHub license](https://img.shields.io/github/license/yaoqs/Issues-LordYao.svg)](https://github.com/yaoqs/Issues-LordYao/blob/master/LICENSE)
 
-- 版权声明：Copyright © 2019-2024 要庆生. All rights reserved.
+- 版权声明：Copyright © 2019-2025 要庆生. All rights reserved.
 - 欢迎通过github仓库在线留言或[![Email](http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_01.png)](http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=m_L69OroxPj1qqKjrdvq6rX49PY)沟通
 - 欢迎star、fork或共同参与维护仓库，并请保留页面底部版权信息，谢谢！
