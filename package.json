@@ -4,9 +4,9 @@
   "description": "",
   "main": "generateblog.js",
   "scripts": {
-    "test": "node generateblog -u yaoqs -r Issues-LordYao -l blog"
+    "test": "node generateblog.js -u briteming -r ily -l blog"
   },
-  "author": "yaoqs",
+  "author": "brite",
   "license": "MIT",
   "dependencies": {
     "js-yaml": "^4.1.0",
