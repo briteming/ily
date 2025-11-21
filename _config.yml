@@ -6,27 +6,6 @@ keywords: LordYao,scholar,要庆生,yaoqs,FUTURE & CIVILIZATION，Natural/Social
 author: brite
 Author: https://img.shields.io/badge/Author-Yao_Qingsheng-ffffff?style=flat-square&logo=china&logoColor=black
 githubname: briteming
-slogan:
-  sub1: 解放思想，发展生产力
-  sub2: 为天地立心，为生民立命，为往圣继绝学，为万世开太平。
-  sub3: 知行合一
-  sub4: 凡事预则立，不预则废
-  sub5: 茍日新，日日新，又日新
-  sub6: 天之道，利而不害；圣人之道，为而不争
-  sub7: 吾尝终日而思矣，不如须臾之所学也。吾尝跂而望矣，不如登高之博见也。君子生非异也，善假于物也。
-  sub8: 练得身形似鹤形，千株松下两函经。我来问道无馀说，云在青霄水在瓶。
-
-avatar:
-  # in theme directory(source/images): /images/avatar.gif
-  # in site  directory(source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: /images/avatar_sx_lite.png #author.jpg  #将我们的头像图片放置在blog/themes/next/source/images目录下，填写具体地址
-  # If true, the avatar would be dispalyed in circle.
-  rounded: true #鼠标放在头像上时是否旋转
-  # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1 #头像放缩指数
-  # If true, the avatar would be rotated with the cursor.
-  rotated: true #头像是否设为圆形，否则为矩形
 
 rss:
   href: /atom.xml
